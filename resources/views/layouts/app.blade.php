@@ -16,7 +16,7 @@
 
         <!-- Styles -->
         @livewireStyles
-    </head>
+    </head> 
     <body class="font-sans antialiased">
         <x-banner />
 
@@ -24,8 +24,7 @@
             @yield('hero')
             <main class="container mx-auto px-5 flex flex-grow">
                 {{ $slot }}
-            </main>
-        
+            </main>       
          @include('layouts.partials.footer')
         @stack('modals')
 

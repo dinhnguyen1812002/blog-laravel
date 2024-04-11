@@ -17,7 +17,9 @@
             <div class="w-full">
                 <div class="grid grid-cols-3 gap-10 w-full">
                     @foreach ($featuredPosts as $post )
-                        <x-posts.post-card  :post='$post' class="md:col-span-1 col-span-3"/>
+                    <div class="md:col-span-1 col-span-3">
+                        <x-posts.post-card  :post='$post'  />
+                    </div>
                     @endforeach
                 </div>
             </div>
@@ -32,7 +34,7 @@
             <div class="grid grid-cols-3 gap-10 gap-y-32 w-full">
                     @foreach ($latestPosts as $post )
                         <div class="md:col-span-1 col-span-3">
-                            <x-posts.post-card  :post='$post'/>
+                            <x-posts.post-card  :post='$post'  />
                         </div>
                     @endforeach
             </div>

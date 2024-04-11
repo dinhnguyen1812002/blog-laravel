@@ -1,10 +1,11 @@
 @props(['post'])
-<div {{ $attributes }}>
-    <a  wire:navigate href="{{ route('post.show',$post->slug)}}">
+<div {{ $attributes }} class="border border-gray-300 rounded-xl p-4">
+    <a wire:navigate href="{{ route('post.show',$post->slug)}}">
         <div>
-            <img  class="w-full rounded-xl " src="{{ asset ('storage/'. $post->image) }}">
+            <img class="w-full rounded-xl" src="{{ asset ('storage/'. $post->image) }}">
         </div>
     </a>
+    <hr>
     <div class="mt-3">
         <div class="flex items-center mb-2 gap-x-2">
             @if ($category = $post->categories->first())

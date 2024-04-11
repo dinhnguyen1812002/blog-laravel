@@ -6,7 +6,7 @@
         </h1>
         <div class="flex items-center justify-between mt-2">
             <div class="flex items-center py-5">
-                <x-posts.author :author="$post->author" size="md" />
+                 <x-posts.author :author="$post->author" size="md" /> 
                 <span class="text-sm text-gray-500">| {{ $post->getReadingTime() }} min read</span>
             </div>
             <div class="flex items-center">
